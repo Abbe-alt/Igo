@@ -17,6 +17,9 @@ img {
  height: 143px;
  padding: 3px 0px 0px 0px;
 }
+#kitty {
+filter: brightness(100%); /*brightness(30.90)*/
+}
 body {
 width: 320px;
 margin: 0 auto;

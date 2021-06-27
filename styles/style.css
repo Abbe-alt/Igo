@@ -41,3 +41,12 @@ padding: 3px 20px 15px 10px;
     margin: 0 auto;
     padding: 13px 23px 0px 0px;
   }
+  .redd-text{ /*The redd-text class is only a type of id, can have any name, as long as they match*/
+    color: red;
+  }
+  .thin-border{
+    border-color: rgb(39, 209, 113);
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+  }

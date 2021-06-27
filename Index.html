@@ -5,6 +5,7 @@
     <meta><!--Metadata elements, such as links, meta, title, style, tipically go inside head-->
     <title>wEBPegi</title>
     <a href="https://m.youtube.com" target="blank">Abbe the cornflake<a>
+      <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
       <link href="styles/style.css" rel="stylesheet">
     </meta>
     </head>
@@ -16,8 +17,16 @@
   h2 {
   color: rgb(13, 238, 238);
   }
+ #my-id {
+  font-size: 19px;
+  font-family: sans-serif;
+  } /*sans-serif is a commont one, but in case you want a less common one, and no issues, 
+  you can specify to degrade to another one if not available. font-family: Lobster, sans-serif;*/
+ #Wcoding {
+   font-family: Lobster, sans-serif;
+  }
   </style> <!-- <style> .red-text{color: red;} </style> then addding the class to the target
-  element, ex: <h2 class="red-text">Heading example</h2> omitting the period 
+  element, multiple ones. Ex: <h2 class="red-text">Heading example</h2> omitting the period 
   -->
   
   <body>
@@ -32,11 +41,13 @@
   <summary id="summ1">Abreme you!!!</summary><p id="summ">Eres muu guapa.</p>
 </details>
 <p>You're seeing coding written using a <strong>smartphone</strong>, as<br>you can see is possible to do so. 
-  The reasons sometimes it's better coding using your <strong>PC</strong> it's because there are more tools and implementations you can use, but giving how <strong>advanced software</strong> on smartphones is nowadays, we'll have most of the basic tools inside our pockets.</p>
+  The reasons sometimes it's better coding using your <strong>PC</strong> it's because there are more tools and implementations
+   you can use, but giving how <strong>advanced software</strong> on smartphones is nowadays, we'll have most of the basic tools inside our pockets.</p>
   <p id="my-id">Ipsum kippy, kippy meae nubibus dormit, et ego.
      My-id text being modified by css</p>
      <a href="#"><img src="images/tutti.png"></a>
-     <p draggable="true">This is another text sample to add some body to all this page, nothing of relevance really. This is how it looks. And now the text should be of another <strong>colour</strong>.</p>
+     <p id="Wcoding" draggable="true">This is another text sample to add some body to all this page, nothing
+        of relevance really. This is how it looks. And now the text should be of another <strong>colour</strong>.</p>
      <iframe src="Index.html" title="Frammy" height="140" width="140" frameborder="1"></iframe>
      <form action="submitted.txt">
       <input type="text" placeholder="Type me, danmit!!!" required>  

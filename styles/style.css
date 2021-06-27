@@ -30,3 +30,14 @@ padding: 3px 20px 15px 10px;
  #my-id {
     color: red;
   }
+  #summ {
+    color: rgb(207, 104, 121);
+    background-color: rgb(255, 255, 192);
+  }
+  #summ1 {
+  background-color: rgb(246, 246, 205);
+  }
+  details {
+    margin: 0 auto;
+    padding: 13px 23px 0px 0px;
+  }

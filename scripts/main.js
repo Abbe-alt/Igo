@@ -1,5 +1,5 @@
-const myHeading = document.querySelector('h1'); /*querySelector() is a function*/
-myHeading.textContent = 'yamete kudasai!';
+const myHeading = document.querySelector('h1'); /*querySelector('') is a function*/
+myHeading.textContent = 'Yamete Kudasai!';
 let myVariable = '3 + 5';
 let iceCream = 'chocolate';
 if(iceCream === 'chocolate') {

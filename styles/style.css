@@ -5,6 +5,9 @@
   border: 3.1px solid black;
   background-color: #c7ced3;
 }
+h2 {
+  text-align: center;
+}
 p {
 color: #0647e9;
 background-color: #e59a09;
@@ -25,10 +28,13 @@ width: 320px;
 margin: 0 auto;
 background-color: #004ac1;
 padding: 3px 20px 15px 10px;
- border: 2.8px solid black;
+ border: 2.8px solid #000; /*We can use the 6 digits or only the Emmet abrebiation (4mil colors)*/
   }
  #my-id {
-    color: red;
+    color: red !important;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
   }
   #summ {
     color: rgb(207, 104, 121);
@@ -39,14 +45,51 @@ padding: 3px 20px 15px 10px;
   }
   details {
     margin: 0 auto; /*Space around elements, the lesser, the bigger till reach negative values.*/
-    padding: 13px 23px 0px 0px;
+    padding: 13px 23px 0px 0px; /*padding-top, padding-right, padding-bottom, and padding-left
+    relative and absolute sizes example: padding: 1.5em;*/
   }
   .redd-text{ /*The redd-text class is only a type of id, can have any name, as long as they match*/
     color: red;
+    position: fixed; right: 250px; top:20px;
   }
-  .thin-border{
-    border-color: rgb(39, 209, 113);
+  :root {
+    --green-color: yellow;
+  }
+  .thin-border {
+    border-color: var(--green-color, pink);
     border-width: 5px;
     border-style: solid;
     border-radius: 10px; /*Either percentage or pixels*/
   }
+  /*.right-feet {
+    top: 85%;
+    left: 60%;
+    background: orange;
+    width: 15%;
+    height: 30%;
+    border-radius: 50% 50% 50% 50%;
+    transform: rotate(-80deg);
+    z-index: -2222;
+  }*/
+  .ttt {
+    background-color: yellowgreen;
+  }
+  #darky {
+    top: -1355px;
+    position: relative;
+    bottom: 0px;
+    left: 400px;
+    }
+    #waiky {
+      top: -1355px;
+      position: relative;
+      bottom: 0px;
+      left: 570px;
+    }
+    #waikyt {
+      all: unset;
+      top: -1355px;
+      position: relative;
+      bottom: 0px;
+      left: 446px;
+    }

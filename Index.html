@@ -7,34 +7,44 @@
     <a href="https://m.youtube.com" target="blank">Abbe the cornflake<a>
       <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
       <link href="styles/style.css" rel="stylesheet">
+      <style>
+        .smaller-image{
+        width: 100px;
+      }
+      h2 {
+      color: rgb(13, 238, 238);
+      }
+     #my-id {
+      font-size: 19px;
+      font-family: sans-serif;
+      } /*sans-serif is a commont one, but in case you want a less common one, and no issues, 
+      you can specify to degrade to another one if not available. font-family: Lobster, sans-serif;*/
+     #Wcoding {
+       font-family: Lobster, sans-serif;
+      }
+      </style> <!-- <style> .red-text{color: red;} </style> then addding the class to the target
+      element, multiple ones. Ex: <h2 class="red-text">Heading example</h2> omitting the period 
+      -->
     </meta>
     </head>
 <main> <!--All displayed to the user will be here-->
+  <header>
+    <h1>Clippy</h1> <!--Can be only one, search eng. use it to know part of content-->
+    <nav>
+      <ul>
+        <ls><a href="#">Clip</a>
+        </ls>
+        <ls><a href="#">Clap</a></ls>
+        <ls><a href="#">Clep</a></ls>
+  </ul>
+</nav>
+</header>
   <h1>Coding is cuul</h1>
   <p>Hola warudo!!!
   <br>.
   </p>
   <h2>This second section</h2>
   <hr>
-  <style>
-    .smaller-image{
-    width: 100px;
-  }
-  h2 {
-  color: rgb(13, 238, 238);
-  }
- #my-id {
-  font-size: 19px;
-  font-family: sans-serif;
-  } /*sans-serif is a commont one, but in case you want a less common one, and no issues, 
-  you can specify to degrade to another one if not available. font-family: Lobster, sans-serif;*/
- #Wcoding {
-   font-family: Lobster, sans-serif;
-  }
-  </style> <!-- <style> .red-text{color: red;} </style> then addding the class to the target
-  element, multiple ones. Ex: <h2 class="red-text">Heading example</h2> omitting the period 
-  -->
-  
   <body>
   <!--
   <p>This is only a comment</p> to comment out.
@@ -74,8 +84,9 @@
   <input id="outdoor" type="radio" value="outdoor" name="indoor-outdoor">Outdoor
 </label>
 </form>
-<p class="thin-border redd-text">Har</p> 
+<p class="thin-border redd-text" style="position: fixed;">Har</p> 
 <!--we can add multiple classes spacing them class="red blue"-->
+<div class="thin-border animm">rr</div>
 </body>
 </html>
 <html>
@@ -85,11 +96,17 @@
     </div>-->
     <img id="Haruimg" src="images/mimi.png">
     <script src="scripts/main.js"></script>
-    <button id="darky" onclick = "gfg_Run()">Dark theme
+    <button class="button-bg" id="darky" onclick = "gfg_Run()">Dark theme
   </button>
 <button id="waiky" onclick = "gfg_Runn()">White theme
   </button>
   <p id="waikyt">--></p>
+  <hr>
+  <section id="boxy">
+I'm a box, you frik!!!
+  </section>
+  <div id="boxy2"></div>
+  <section id="texture"></section>
   </body>
 </main>
  </html>

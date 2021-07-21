@@ -26,7 +26,7 @@ background-color: #e59a09;
 border: 0.7px solid black;
 padding: 1px 20px 20px 20px;
 }
-img {
+img { /*images can be converter as block elements, with display: block; margin auto*/
  width: 150px; 
  height: 143px;
 }
@@ -68,7 +68,9 @@ padding: 3px 20px 15px 10px;
   }
   .thin-border {
     border-color: var(--green-color, pink);
+    position: relative;
     border-width: 5px;
+    padding: 8px 12px 8px 12px;
     border-style: solid;
     border-radius: 10px; /*Either percentage or pixels*/
   }
@@ -92,6 +94,7 @@ padding: 3px 20px 15px 10px;
     bottom: 0px;
     left: 400px;
     box-shadow: 5px 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    z-index: 2;
     } /*offset-x/horizontally offset-y/vertically blur-radius spread-radius*/
     #waiky {
       top: -1355px;
@@ -106,7 +109,7 @@ padding: 3px 20px 15px 10px;
       position: relative;
       bottom: 0px;
       left: 442px;
-      box-shadow: 5px 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      box-shadow: 5px 10px 20px rgba(11, 131, 17, 0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
     iframe {
       margin: 16px 16px 16px 16px;
@@ -122,3 +125,93 @@ padding: 3px 20px 15px 10px;
       top: 4px;
       right: 10px;
     }
+     
+      .button-bg {
+        background-color: #e66700;
+        border-radius: 4px;
+
+      }
+  #boxy {
+      background-color: rgb(10, 10, 93);
+      background: linear-gradient(70deg, yellowgreen, blue);
+      height: 100px;
+      width: 100px;
+      margin: auto;
+      z-index: 2;
+      }
+      #boxy:hover {
+        transform: scale(1.1);
+        /*transform: skewX(24deg), rotate(0deg);*/
+        transform: skewY(-10deg);
+        content: "";
+        }
+      #boxy2 {
+        border-radius: 20px;
+        width: 70%;
+        height: 400px;
+        margin: 50 auto;
+        background: repeating-linear-gradient(45deg, 
+        yellow 0px, 
+        red 40px,
+         black 40px, 
+         red 80px,);
+         z-index: 3;
+      }
+      #texture {
+        background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
+      }
+      /*color parity, makeking it more appealling. 
+      color wheel , rbg primary and complementary*/
+      /*hsl to adjust hue, saturation, and lightness. Prefered by designers*/
+     .animm:hover {
+       animation-name: animm;
+       animation-duration: 5s;
+       animation-iteration-count: infinite;
+     }
+    @keyframes animm {
+      0% {
+        background-color: yellow;
+        top: 0px;
+      }
+      50% {
+        background-color: red;
+        top: 25px;
+      }
+      65% {
+        background-color: black;
+        left: -25px;
+      }
+      75% {
+          background-color: yellow;
+          top: -25px;
+        }
+        80% {
+          background-color: red;
+          top: -25px;
+        }
+        90% {
+          background-color: black;
+          left: 6px;
+          opacity: 0.1;
+          height: 10px;
+          width: 8px;
+          }
+        100% {
+          background-color: yellow;
+          top: 6px;
+          }
+     }
+     button:hover {
+      animation-name: background-color;
+      animation-duration: 500ms; /*Either this or @keyframe percent (at what point 
+      it appears) and  transform*/
+      animation-fill-mode: forwards;
+    }
+    @keyframes background-color {
+     100% {
+        background-color: #4791d0;
+      }
+    }
+    /*Can rename more than one the same and add them to @keyframes*/
+    /*animation-timing-function: linear, ease, ease-out, ease-in and 
+    cubic-beizer(x1, y1, x2, y2) for a more precise value;*/

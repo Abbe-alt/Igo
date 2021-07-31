@@ -215,3 +215,8 @@ padding: 3px 20px 15px 10px;
     /*Can rename more than one the same and add them to @keyframes*/
     /*animation-timing-function: linear, ease, ease-out, ease-in and 
     cubic-beizer(x1, y1, x2, y2) for a more precise value;*/
+  footer {
+    background-color: black;
+    opacity: 50%;
+    color: aliceblue;
+  }

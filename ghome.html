@@ -1,0 +1,154 @@
+<html>
+<meta>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="style.css" rel="stylesheet">
+<title>Foogle</title>
+<style>
+.material-icons-outlined {
+position: relative;
+top: 12;
+left: 860px;
+}
+.material-icons-outlined:hover {
+background-color: hsla(209, 100%, 50%, 0.13);
+}
+#searchbar {
+position: relative;
+    display: flex;
+    min-width: 100px;
+right: -260px;
+top: 150px;
+}
+#searchbarr:hover {
+box-shadow: 1px 2px 7px grey;
+}
+#searchbarr {
+border: 1px solid gray;
+border-radius: 19px;
+height: 40px;
+width: 500px;
+
+}
+body {
+width: 100%;
+
+}
+#button-bg {
+font-family: monospace;
+position: relative;
+right: -410px;
+top: 170px;
+}
+#btton {
+background-color: D8E4F0;
+border: 1px;
+border-radius: 3px;
+padding: 10px 12px 11px 12px;
+cursor: pointer;
+}
+#btton1 {
+background-color: hD8E4F0;
+border-radius: 3px;
+border: 1px;
+margin-left: 5px;
+padding: 10px 12px 11px 12px;
+cursor: pointer;
+
+}
+#btton:hover {
+border: 1px;
+}
+#links {
+text-decoration: none;
+position: relative;
+top: 5.5px;
+margin-left: 5px;
+right: -850px;
+color: black;
+}
+links:active {
+  text-decoration: underline;
+}
+#footy {
+position: absolute;
+font-family: sans;
+display: flex;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 33px;
+background-color: D8E4F0;
+}
+.About {
+position: relative;
+top: -6px;
+}
+.Aboutt {
+position: relative;
+top: -6px;
+right: -60px;
+}
+.Business {
+position: relative;
+right: -100px;
+top: -6px;
+}
+#searchicon {
+position: absolute;
+top: 9px;
+left: 13px;
+cursor: pointer;
+}
+.signin {
+position: relative;
+left: 1000px;
+top: -19;
+background-color: dodgerblue;
+color: white;
+width: 55px;
+padding-bottom: 6px;
+padding-left: 7px;
+padding-right: 3px;
+padding-top: 3px;
+border-radius: 2px;
+margin-right: 9px;
+}
+.foogle {
+position: absolute;
+top: 110px;
+left: 420px;
+max-width: 272px;
+max-height: 92px;
+width: auto;
+}
+</style>
+</meta>
+<body>
+<a href="https://www.google.com/gmail/"  id="links">Fmail</a>
+<a href="https://web.archive.org/web/20191130234759/https://www.google.com/imghp?hl=en&tab=wi&ogbl" id="links">Images</a>
+<span class="material-icons-outlined" title="Foogle Apps">
+<img src="images/appicon.png">
+</span>
+<div class="signin">Sign In</div>
+<img  class="foogle" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/284f0cdc998be7e4751e29e8458323ad5d320303/foundations/the_front_end/project_html_css/imgs/00.png">
+<div id="searchbar">
+           <label for="search"></label>
+		   <input type="search" id="searchbarr" name="search" title="Search">
+			<img id="searchicon" src="searchicon/searchicon.png">
+          </div>
+		  <br>
+			<div id="button-bg"> 
+			<button id="btton" onclick="alert('You fell for it you fool!!! Foogler')">Foogle Search</button>
+			<button id="btton1" onclick="alert('Not supposed to do that, mate.')">I'm Feeling Lucky</button>
+  </div>
+<!-- /*<div id="searchbar">
+dd
+</div>
+-->
+<footer id="footy">
+<p class="About">About</p>
+<p class="Aboutt">Advertising</p>
+<p class="Business">Business</p>
+</footer>
+</body>
+<html>
